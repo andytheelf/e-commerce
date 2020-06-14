@@ -37,12 +37,15 @@ npm start
 [Demo of application](https://youtu.be/WbtVA5TOF1o) 
   
 
-### Tests of different GET, PUSH, PUT, and DELETE requests.
+### Tests of different Get, Push, Put, and Delete requests.
 
-![GIF of Categories](./images/categories.gif)  
+## Categories
+![GIF of Categories](./images/categories.gif) 
 
+## Tags
 ![GIF of Tags](./images/tags.gif)
 
+## Products
 ![GIF of Products](./images/products.gif) 
    
 
