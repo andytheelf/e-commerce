@@ -8,10 +8,10 @@
 <img src="https://img.shields.io/badge/Insomnia-orange"/>
 </p>
 
-## Description
-### MySql database that uses Expres, Sequelize, dotenv, and Node.js to run the backend of a E-Commerce site.
+## What E-commerce can do! 
+### MySql database that runs the backend of an E-commerce site! 
 
-## Install
+## How to Install!
 npm init
 
 npm install mysql2
@@ -20,8 +20,8 @@ npm install sequelize
 
 npm install dotenv
 
-## Usage
-### In the terminal Run follow these steps to start application
+## How to Use!
+### In your terminal run the following steps!
 mysql -u root -p
 enter password  
 
@@ -33,7 +33,7 @@ npm run seed
 npm start
       
 
-### Link to demostration of the application 
+### Link to demonstration!
 [Demo of application](https://youtu.be/WbtVA5TOF1o) 
   
 
@@ -49,5 +49,5 @@ npm start
 ![GIF of Products](./images/products.gif) 
    
 
-## Questions
+## Questions?
 ### [andytheelf for GitHub](https://github.com/andytheelf?tab=repositories)  
