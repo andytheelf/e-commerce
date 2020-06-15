@@ -1,4 +1,4 @@
-<h1 align="center">E-Commerce Back End</h1>
+<h1 align="center">E-Commerce</h1>
 
 <p align="center">
 <img src="https://img.shields.io/badge/Javascript-brightgreen"/>
