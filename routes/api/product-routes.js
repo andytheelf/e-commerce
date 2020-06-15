@@ -63,7 +63,7 @@ router.get('/:id', (req, res) => {
         ]
     }).then(dbProData => {
         if (!dbProData) {
-            res.status(404).json({ message: 'ID does not match product' });
+            res.status(404).json({ message: 'ID does not match!' });
             return;
         }
         res.json(dbProData);
@@ -93,7 +93,7 @@ router.post('/', (req, res) => {
                 });
                 return ProductTag.bulkCreate(productTagIdArr)
             }
-            // if no product tags, just respond
+            // if no product tags-
             res.status(200).json(product)
         }).then((productTagIds) => res.status(200).json(productTagIds))
         .catch((err) => {
@@ -126,12 +126,12 @@ router.put('/:id', (req, res) => {
                         tag_id,
                     };
                 });
-            // figure out which ones to remove
+            //which ones to remove
             const productTagsToRemove = productTags
                 .filter(({ tag_id }) => !req.body.tagIds.includes(tag_id))
                 .map(({ id }) => id);
 
-            // run both actions
+            // run each action
             return Promise.all([
                 ProductTag.destroy({ where: { id: productTagsToRemove } }),
                 ProductTag.bulkCreate(newProductTags),
@@ -151,7 +151,7 @@ router.delete('/:id', (req, res) => {
         }
     }).then(dbProData => {
         if (!dbProData) {
-            res.status(404).json({ message: 'ID does not match a product' })
+            res.status(404).json({ message: 'ID does not match!' })
             return
         }
         res.json(dbProData)

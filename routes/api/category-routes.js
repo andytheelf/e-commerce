@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
         }
     }).then(dbCatData => {
         if (!dbCatData) {
-            res.status(404).json({ message: 'Category not found' })
+            res.status(404).json({ message: ' No Category found' })
             return
         }
         res.json(dbCatData)
@@ -35,7 +35,7 @@ router.get('/:id', (req, res) => {
         }
     }).then(dbCatData => {
         if (!dbCatData) {
-            res.status(404).json({ message: 'No Category with this ID' })
+            res.status(404).json({ message: 'No Category found!' })
             return;
         }
         res.json(dbCatData)
@@ -64,7 +64,7 @@ router.put('/:id', (req, res) => {
         }
     }).then(dbCatData => {
         if (!dbCatData) {
-            res.status(404).json({ message: 'ID does not match a category' })
+            res.status(404).json({ message: 'ID not found!' })
             return;
         }
         res.json(dbCatData)
@@ -82,7 +82,7 @@ router.delete('/:id', (req, res) => {
         }
     }).then(dbCatData => {
         if (!dbCatData) {
-            res.status(404).json({ message: 'ID does not match a category' })
+            res.status(404).json({ message: 'ID not found!' })
             return
         }
         res.json(dbCatData)
